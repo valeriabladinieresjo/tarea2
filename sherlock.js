@@ -29,13 +29,13 @@ var min= new Array((numeros.length-1)/2);
 var max= new Array((numeros.length-1)/2);
 cont=0;
 for(k=1; k<numeros.length; k+=2) {
-		min[cont]= parseInt(numeros[k]);
-		cont++;
+	min[cont]= parseInt(numeros[k]);
+	cont++;
 	}
 cont=0;
 for(k=2; k<numeros.length; k+=2) {
-		max[cont]= parseInt(numeros[k]);
-		cont++;
+	max[cont]= parseInt(numeros[k]);
+	cont++;
 	}
 
 for(r=0; r<num; r++) {
