@@ -28,16 +28,21 @@ num=numeros[0];
 var min= new Array((numeros.length-1)/2);
 var max= new Array((numeros.length-1)/2);
 cont=0;
-for(k=1; k<numeros.length; k+=2) {
-	min[cont]= parseInt(numeros[k]);
-	cont++;
+cont2=0;
+var odd = new Boolean (true);
+for(k=1; k<numeros.length; k++) {
+		if(odd==true){
+			min[cont]= parseInt(numeros[k]);
+			cont++;
+			odd=false;
+		}
+		else{
+			max[cont2]= parseInt(numeros[k]);
+			cont2++;
+			odd=true;
+		}
+		
 	}
-cont=0;
-for(k=2; k<numeros.length; k+=2) {
-	max[cont]= parseInt(numeros[k]);
-	cont++;
-	}
-
 for(r=0; r<num; r++) {
 	o=0;
 	for ( k=min[r]; k<=max[r]; k++){
