@@ -31,18 +31,18 @@ cont=0;
 cont2=0;
 var odd = new Boolean (true);
 for(k=1; k<numeros.length; k++) {
-		if(odd==true){
-			min[cont]= parseInt(numeros[k]);
-			cont++;
-			odd=false;
-		}
-		else{
-			max[cont2]= parseInt(numeros[k]);
-			cont2++;
-			odd=true;
-		}
-		
+	if(odd==true){
+		min[cont]= parseInt(numeros[k]);
+		cont++;
+		odd=false;
 	}
+	else{	
+		max[cont2]= parseInt(numeros[k]);
+		cont2++;
+		odd=true;
+	}
+		
+}
 for(r=0; r<num; r++) {
 	o=0;
 	for ( k=min[r]; k<=max[r]; k++){
